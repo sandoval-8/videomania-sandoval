@@ -1,1 +1,17 @@
-<p>login works!</p>
+<div class="container">
+  <div>
+    <h2>Login</h2>
+    <hr>
+    <form formGroupName="formLogin" #form>
+      <label for="email" class="form-label">Email</label>
+      <input type="text" class="form-control" id="email" formControlName="email">
+
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="password" formControlName="contraseña"><br>
+      <div class="container-btn">
+        <button class="btn btn-primary">Entrar</button>
+        <button class="btn btn-secondary" (click)="registro()">Registrarse</button>
+      </div>
+    </form>
+  </div>
+</div>

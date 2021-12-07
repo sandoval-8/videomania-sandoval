@@ -1,1 +1,26 @@
 <p>registro works!</p>
+<div class="container mb-3">
+  <div>
+    <h2>Registro</h2>
+    <hr>
+    <form class="form">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email">
+
+      <label for="username" class="form-label">Username</label>
+      <input type="text" class="form-control" id="username">
+
+      <label for="new-password" class="form-label">New Password</label>
+      <input type="password" class="form-control" id="new-password">
+
+      <label for="re-password" class="form-label">re-enter password</label>
+      <input type="password" class="form-control" id="re-password">
+
+      <div class="container-btn">
+        <button class="btn btn-primary">Registrarse</button>
+        <button class="btn btn-secondary" (click)="login()">Cancelar</button>
+      </div>
+
+    </form>
+  </div>
+</div>

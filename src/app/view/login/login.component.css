@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container div:nth-child(1) {
+  padding: 40px;
+  border: 1px solid #444444;
+  border-radius: 10px;
+}
+.container-btn {
+  display: flex;
+  justify-content: space-around;
+}
+h2 {
+  text-align: center;
+}
