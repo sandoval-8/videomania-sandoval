@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl, FormGroup} from "@angular/forms";
+
+export type Type = 'login' | 'registro';
 
 @Component({
   selector: 'app-form',
@@ -7,9 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
-  constructor() { }
+  typeForm:string = '';
+
+  constructor() {  }
 
   ngOnInit(): void {
+    this.typeForm = 'login';
   }
 
+  isLogin(type:Type):boolean{
+    this.typeForm = type;
+    return this.typeForm === 'login';
+  }
+
+  isRegistro(type:Type):boolean{
+    this.typeForm = type;
+    return this.typeForm === 'registro';
+  }
 }
