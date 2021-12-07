@@ -1,1 +1,26 @@
-<p>info works!</p>
+<div class="container" style="height: 100vh; display: flex; align-items: center;">
+  <div class="card mb-3" style="width: 80vw; height: 80vh">
+    <div class="row g-0" style="height: 100%;">
+      <div class="col-md-4" style="height: 100%;">
+        <img src="{{ pelicula.url }}" class="img-fluid rounded-start" alt="..." style="height: 100%;">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{ pelicula.nombre }}</h5>
+          <h6>Sinapsis</h6>
+          <p class="card-text" style="max-width: 95%;">{{ pelicula.descripcion }}</p>
+          <p class="card-text"><small class="text-muted">Clasificación: {{ pelicula.clasificacion.clasificacion }}</small></p>
+          <p><small class="text-muted">Estrellas: {{ pelicula.calificacion }}</small></p>
+          <div class="footer-card-info">
+            <div>
+              <button class="btn btn-primary">Comprar ahora</button><p>$ {{ pelicula.precio }}</p>
+            </div>
+            <div>
+              <button class="btn btn-secondary" (click)="agregarAlCarrito(pelicula.id)" style="margin-right: 50px">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
