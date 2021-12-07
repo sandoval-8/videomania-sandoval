@@ -21,7 +21,8 @@ localhost:4200/registro
 localhost:4200  
 --------->  ListadoComponent (Funciona como 'index', muestra todas las peliculas).
 
-localhost:4200/info 
+localhost:4200/info
+
 --------->  InfoComponent (Cuando compras una pelicula muestra el detalle de la compra y pelicula).
 
 localhost:4200/carrito  
