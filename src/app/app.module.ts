@@ -9,6 +9,7 @@ import { CarritoComponent } from './components/carrito/carrito.component';
 import { InfoComponent } from './components/info/info.component';
 import { ListadoComponent } from './components/listado/listado.component';
 import { FormComponent } from './components/form/form.component';
+import { NavComponent } from './view/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormComponent } from './components/form/form.component';
     CarritoComponent,
     InfoComponent,
     ListadoComponent,
-    FormComponent
+    FormComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
