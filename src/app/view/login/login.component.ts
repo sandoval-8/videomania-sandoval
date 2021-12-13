@@ -1,6 +1,7 @@
 import {Component, OnInit, Output} from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
+import {NavVisibleService} from "../../service/nav-visible.service";
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,7 @@ export class LoginComponent implements OnInit {
   formLogin:FormGroup;
   router:Router;
 
-  constructor(router: Router) {
+  constructor(router: Router, private serviceNavVisible:NavVisibleService) {
     this.router = router;
     this.formLogin = new FormGroup({
       email: new FormControl('', Validators.required),
@@ -21,7 +22,7 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
+    this.serviceNavVisible.isVisible(this.router.url);
   }
 
   registro(){

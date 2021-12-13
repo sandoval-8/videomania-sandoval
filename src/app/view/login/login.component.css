@@ -8,6 +8,9 @@
   padding: 40px;
   border: 1px solid #444444;
   border-radius: 10px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 5px 5px 7px 5px #000000;
+  box-shadow: 5px 5px 7px 5px #000000;
 }
 .container-btn {
   display: flex;
